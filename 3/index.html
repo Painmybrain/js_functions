@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <section class="gallery__section">
+      <h1 class="gallery__header">Gallery</h1>
+      <img
+        class="gallery__img"
+        id="img_elem"
+        src="./assets/img/img1.jpg"
+        alt="landscape1"
+      />
+      <div class="gallery__btns">
+        <button
+          onclick="previousImg()"
+          class="gallery__btn gallery__btn_preview"
+        >
+          Previous
+        </button>
+        <button onclick="nextImg()" class="gallery__btn">Next</button>
+      </div>
+    </section>
+    <script src="./gallery.js"></script>
+  </body>
+</html>
